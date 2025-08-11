@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, User } from "lucide-react";
+import { Home, User, MessageSquare, History } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 import { cn } from "@/lib/utils";
 
@@ -12,6 +12,8 @@ export default function BottomNav() {
 
   const navItems = [
     { href: "/", icon: Home, label: "Home" },
+    { href: "/status", icon: History, label: "Status" },
+    { href: "/chat", icon: MessageSquare, label: "Chat" },
     { href: user ? `/profile/${user.uid}` : "/login", icon: User, label: "Profile" },
   ];
 
