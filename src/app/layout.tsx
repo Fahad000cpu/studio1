@@ -6,8 +6,8 @@ import BottomNav from '@/components/layout/bottom-nav';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'LinkShare Lite',
-  description: 'A social e-commerce application',
+  title: 'LinkShare',
+  description: 'A full-featured social e-commerce application.',
 };
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased">
+      <body className="antialiased">
         <AuthProvider>
           <div className="flex flex-col min-h-screen">
             <Header />
